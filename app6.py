@@ -135,7 +135,7 @@ if uploaded_files:
 
         progress.progress((i + 1) / total)
 
-    status.write(f"✅ Successfully processed {total} files, {total_rows_all:,} total rows")
+    status.write(f"✅ Successfully processed {total} files, {total_rows_all} total rows")
 
     merged_df = pd.concat(merged_list, ignore_index=True)
     merged_df.index = merged_df.index + 1
